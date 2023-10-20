@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- Image for the plan policy -->
+    <ImageView
+        android:id="@+id/planImageView"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/car_icon" />
+
+    <!-- Container for the name and details -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="16dp">
+
+        <!-- Name of the plan policy -->
+        <TextView
+            android:id="@+id/planNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Details of the plan policy -->
+        <TextView
+            android:id="@+id/planDetailsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan details..."
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
