@@ -31,13 +31,12 @@ public class login extends AppCompatActivity {
                 if (username.isEmpty() || password.isEmpty()) {
                     Toast.makeText(login.this, "Error: Username and Password cannot be empty!", Toast.LENGTH_SHORT).show();
                 } else {
-
                     Intent intent = new Intent(login.this, BuyNewPlanActivity.class);
                     startActivity(intent);
-                    finish();
-                    // This will close the LoginActivity
+                    finish(); // This will close the LoginActivity
                 }
             }
         });
+
     }
 }

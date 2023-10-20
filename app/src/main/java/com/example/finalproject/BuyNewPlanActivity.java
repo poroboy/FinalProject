@@ -21,6 +21,7 @@ public class BuyNewPlanActivity extends AppCompatActivity {
                 transaction.add(R.id.fragment_container, fragment);
                 transaction.commit();
             }
+
         }
     }
 }
