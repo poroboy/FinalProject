@@ -22,6 +22,7 @@ public class login extends AppCompatActivity {
         final EditText edtPassword = findViewById(R.id.edtPassword);
         Button btnLogin = findViewById(R.id.btnLogin);
 
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,6 +33,7 @@ public class login extends AppCompatActivity {
                     Toast.makeText(login.this, "Error: Username and Password cannot be empty!", Toast.LENGTH_SHORT).show();
                 } else {
                     Intent intent = new Intent(login.this, BuyNewPlanActivity.class);
+                    intent.putExtra("USERNAME", username);
                     startActivity(intent);
                     finish(); // This will close the LoginActivity
                 }

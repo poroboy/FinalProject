@@ -21,13 +21,11 @@
         <activity
             android:name=".BuyPolicyActivity"
             android:exported="false" />
-        <activity
-            android:name=".Buynewplan"
-            android:exported="false" />
+
         <activity
             android:name=".login"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
